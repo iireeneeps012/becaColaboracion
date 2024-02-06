@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+*{
+  font-family: 'Inter', sans-serif;
+}
+
+i {
+  font-size: 2.20em;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icon {
+  font-size: 4em; /* Tamaño del icono */
+  margin-bottom: 10%; /* Espacio entre el icono y el texto */
+}
+
+h3 {
+  margin-bottom: 20%; /* Espacio entre el texto y los puntos */
+}
+
+
+/* Estilos generales para el footer */
+footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  height: 30vh; /* Ocupa el 30% del alto de la ventana */
+  display: flex;
+  justify-content: flex-end; /* Alinea los elementos al final del eje horizontal */
+  align-items: flex-end; /* Alinea los elementos al final del eje vertical */
+}
+
+/* Estilos para los botones con la clase .btn y .button-with-icon */
+.boton_si {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 8vh;
+  width: 20vw;
+  margin-top: 2vh;
+  margin-right: 0;
+  text-align: center;
+  background-color: #242828;
+  color: white;
+}
+.boton_no {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 8vh;
+  width: 20vw;
+  margin-top: 2vh;
+  margin-right: 0;
+  text-align: center;
+  background-color: #a0a2a2;
+}
+
+
+

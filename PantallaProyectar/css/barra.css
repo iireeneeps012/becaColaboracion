@@ -1,0 +1,54 @@
+#progressContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.vertical-progress-bar {
+    height: 200px;
+    width: 20px;
+    background-color: #f0f0f0;
+    margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.progress-fill {
+    width: 100%;
+    background-color: #4caf50;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: height 0.3s ease-in-out;
+}
+
+.volume-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.volume-button {
+    width: 40%;
+    margin: 0;
+    border-top: 0.2px solid #989898;
+    border-left: 0.2px solid #989898;
+    border-right: 0.2px solid #989898;
+    border-bottom: 0;
+}
+
+.volume-button_mute {
+    border-bottom: 0.2px solid #989898;
+}
+
+.volume-button_mute.pulsado {
+    background-color: orange;
+    color: white;
+}
+
+
+h4 {
+    text-align: center;
+    margin-bottom: 10%;
+}

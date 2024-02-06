@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+/**/
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+i {
+    font-size: 2.20em;
+    margin: 2%;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+/*Barra superior*/
+
+.division_nav {
+    height: 10%;
+    background-color: #CB0017;
+    color: white;
+}
+
+/* Barra superior: boton de vuelta atrás*/
+
+.division_nav_back {
+    background-color: rgb(57, 56, 56);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+/* Barra superior: enunciado del medio*/
+.division_nav_audio {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+/* Barra superior: boton ayuda y apagar*/
+.division_nav_bloque {
+    height: 100%;
+
+}
+
+.division_bloque_ayuda {
+    background-color: rgb(221, 212, 208);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    color: black;
+    align-items: center;
+
+}
+
+.division_bloque_power {
+    height: 100%;
+    background-color: #242828;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+}
+
+
+
+/**/
+
+.division_general {
+    height: 90%;
+
+}
+
+.col_izq {
+    border-right: 0.5px solid #fff4f4;
+}
+
+.division_mod_uso {
+    width: auto;
+    text-align: center;
+    height: 20%;
+    background-color: #c2bbbb;
+}
+
+.divsion_check_camara {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+
+}
+
+.division_general_mod_uso {
+    height: 100%;
+    width: auto;
+
+}
+.divsion_cabecera_mod_uso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col_btn_audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.col_btn_proyector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: orange;
+    color: white;
+}
+
+
+.col_btn_video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+.division_mod_general {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+
+
+.division_boton_bloque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.division_boton_bloque i span {
+    text-align: right;
+}
+
+.division_boton_proyector {
+    background-color: rgb(221, 212, 208);
+    width: 70%;
+    height: 20%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.division_boton_proyector:hover {
+    background-color: orange;
+    color: white;
+}
+
+
+
+
+.division_boton_congelar {
+    background-color: rgb(221, 212, 208);
+    width: 70%;
+    height: 20%;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* Estilo cuando se pulsa */
+.division_boton_congelar.pulsado {
+    background-color: orange;
+    color: white;
+}
+
+.division_boton_congelar.pulsado span {
+    content: "Congelado";
+}
+/*micro*/
+.division_boton_micro {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    font-size: 0.8em;
+}
+
+.texto-derecha {
+    margin-left: 5px; /* Ajusta este valor según sea necesario */
+}
+
+
+/**/
+/*fuente*/
+.division_boton_bloq_fnt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
+.division_boton_fuente {
+    background-color: rgb(221, 212, 208);
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.division_fuente_seleccionada {
+    height: 10%;
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+/**/
+.division_mod_bot_conf {
+    background-color: rgb(185, 185, 185);
+    height: 10%;
+}
+
+
+.division_boton_conf_manual {
+    background-color: rgb(221, 212, 208);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.col_drch{
+    display: flex;
+    align-items: center;
+}

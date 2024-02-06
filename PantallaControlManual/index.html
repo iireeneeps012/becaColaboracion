@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/barra.css" rel="stylesheet">
+    <title>Pantalla de Videoconferencia</title>
+</head>
+
+
+<body>
+
+<div class="container-fluid full-height">
+    <!-- Primera sección version nav con el enunciad-->
+    <div class="row division_nav">
+
+        <div class="col-md-1 division_nav_back" id="btn_back">
+                <i class="bi bi-arrow-left">
+                </i>
+        </div>
+
+        <div class="col-md-9 division_nav_audio">
+            <i class="bi bi-person-square"></i>
+            <span class="enunciado-div1">Control Manual de cámara</span>
+        </div>
+
+        <div class="col-md-2">
+            <div class="row division_nav_bloque">
+                <div class="col-md-6 division_bloque_ayuda" id="btn_help">
+                        <i class="bi bi-journal-bookmark-fill"></i>
+                </div>
+                <div class="col-md-6 division_bloque_power" id="btn_power">
+
+                        <i class="bi bi-power"></i>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Segunda con el contenido general de la pantalla-->
+
+    <div class="row full-height division_general">
+        <div class="col-md-10 col_izq ">
+
+            <div class="row division_mod_uso">
+                <!-- Botones de checkbox camara -->
+                <div class="col-md-6 divsion_check_camara">
+                    <i class="bi bi-camera-video-fill"></i>
+                    <div class="btn_check">
+                        <input type="checkbox" class="checkbox" id="chk_camara"/>
+                        <label class="label" for="chk_camara">
+                            <span class="off">OFF</span>
+                            <span class="on">ON</span>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+                <!-- Botones de checkbox seguimiento -->
+                <div class="col-md-6 divsion_check_camara">
+                    <i class="bi bi-person-bounding-box"></i>
+                    <div class="btn_check">
+                        <input type="checkbox" class="checkbox" id="chk_seguimiento"/>
+                        <label class="label" for="chk_seguimiento">
+                            <span class="off">OFF</span>
+                            <span class="on">ON</span>
+                            <div class="ball"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row full-height division_mod_general">
+                <!-- divisiores para el control movimiento de la cámara -->
+                <div class="col-md-6 division_control_camara" id="div_ctrl_camara">
+
+                    <div class="row div_botones_flecha_arriba">
+                        <div class="col-md-4"></div>
+
+                        <div class="col-md-4 div_boton_flecha_arriba">
+                            <i class="bi bi-arrow-up"></i>
+                        </div>
+
+                        <div class="col-md-4"> </div>
+                    </div>
+
+                    <!-- Fila 2 -->
+                    <div class="row div_botones_medio">
+                        <div class="col-md-4 div_btn_fcha_izq">
+                            <i class="bi bi-arrow-left"></i>
+                        </div>
+
+                        <div class="col-md-4 div_btn_camara">
+                            <i class="bi bi-camera-video-fill"></i>
+                        </div>
+
+                        <div class="col-md-4 div_btn_fcha_drch">
+                            <i class="bi bi-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <!-- Fila 3 -->
+                    <div class="row div_botones_flecha_abajo">
+                        <!-- Columna 1 -->
+                        <div class="col-md-4"> </div>
+
+                        <div class="col-md-4 div_btn_flcha">
+                            <i class="bi bi-arrow-down"></i>
+                        </div>
+
+                        <div class="col-md-4"></div>
+                    </div>
+
+                    <!-- Fila 4 -->
+                    <div class="row div_botones_zoom">
+                        <div class="col-md-4 div_btn_zoom_mas">
+                            <i class="bi bi-zoom-in"></i>
+                        </div>
+                        <div class="col-md-4 div_btn_zoom_menos">
+                            <i class="bi bi-zoom-out"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 division_control_planos" id="bdiv_ctrl_plano">
+                    <h3>Planos de cámara</h3>
+                    <div class="row div_btn_fila1">
+                        <div class="div_plan_camara col-md-4 div_btn_plano_1">
+                            <i class="bi bi-person-video3"></i>
+                            <span class="icon_text">General</span>
+                        </div>
+                        <div class="div_plan_camara col-md-4 div_btn_plano_2">
+                            <i class="bi bi-person-rolodex"></i>
+                            <span class="icon_text">Mesa</span>
+                        </div>
+                    </div>
+                    <div class="row div_btn_fila2">
+                        <div class=" div_plan_camara col-md-4 div_btn_plano_1">
+                            <i class="bi bi-caret-left-square-fill"></i>
+                            <span class="icon_text">Pizarra Izquierda</span>
+                        </div>
+                        <div class=" div_plan_camara col-md-4 div_btn_plano_2">
+                            <i class="bi bi-caret-right-square-fill" id="icono"></i>
+                            <span class="icon_text" id="tex">Pizarra Derecha</span>
+                        </div>
+                    </div>
+                    <div class="row div_btn_fila3">
+                        <div class=" div_plan_camara col-md-4 div_btn_plano_1">
+                            <i class="bi bi-person-fill"></i>
+                            <span class="icon_text">Personalizado 1</span>
+                        </div>
+                        <div class="div_plan_camara col-md-4 div_btn_plano_2" onclick="cambiarEstilos()">
+                            <i class="bi bi-person-fill" id="icon"></i>
+                            <span class="icon_text" id="text">Personalizado 2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col_drch">
+            <div class="col-md-12 custom-section sub3division">
+                <div class="row h-100">
+                    <div class="col-md-12">
+                        <aside>
+                            <!-- Barra animada de progreso vertical -->
+                            <div id="progressContainer">
+                                <div class="vertical-progress-bar" id="verticalProgressBar"
+                                     onmousedown="startDragging(event)">
+                                    <div class="progress-fill" id="progressFill" style="height: 50%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Botones de volumen -->
+                            <div class="volume-buttons">
+                                <button id="volumeUpButton" class="volume-button" onclick="adjustVolume(10)"><i class="bi bi-volume-up"></i></button>
+                                <button id="volumeDownButton" class="volume-button" onclick="adjustVolume(-10)"><i class="bi bi-volume-down"></i></button>
+                                <button id="muteButton" class="volume-button volume-button_mute" onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+<script src="js/script.js"></script>
+<script src="js/cambioColor.js"></script>
+<script src="js/barra.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+
+
+/**/
+*{
+    font-family: 'Inter', sans-serif;
+}
+
+i {
+    font-size: 2.20em;
+}
+
+.full-height {
+    height: 100vh;
+}
+/*encabezado*/
+
+/*Barra superior*/
+
+.division_nav {
+    height: 10%;
+    background-color: #CB0017;
+    color: white;
+}
+
+/* Barra superior: boton de vuelta atrás*/
+
+.division_nav_back {
+    background-color: rgb(57, 56, 56);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+/* Barra superior: enunciado del medio*/
+.division_nav_audio {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-size: large;
+}
+
+/* Barra superior: boton ayuda y apagar*/
+.division_nav_bloque {
+    height: 100%;
+
+}
+.division_bloque_ayuda {
+    background-color: rgb(221, 212, 208);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.division_bloque_power {
+    height: 100%;
+    background-color: #242828;
+    display: flex;
+    justify-content: center;
+
+    color: white;
+
+    align-items: center;
+}
+
+
+
+/**/
+
+/*Segunda con el contenido general de la pantalla*/
+
+.division_general{
+    height: 90%;
+    
+}
+.col_izq{
+    border: 1px solid black;
+}
+
+.contenedor {
+    margin-bottom: 0;
+}
+
+.custom-card {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.col_drch{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
