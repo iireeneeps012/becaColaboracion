@@ -10,71 +10,33 @@ divClickable.addEventListener('click', function() {
 // Para ir a la pantalla de apagar
 var divClickable = document.getElementById('btn_power');
 divClickable.addEventListener('click', function() {
-    // Redirigir a otro sitio
-    window.location.href = '../PantallaTransaccion/pantalla_animacion_apagar_sistema.html';
+    var pantallaCerrar = window.open("../PantallaTransaccion/pantalla_animacion_apagar_sistema.html", "_blank", "width=600,height=400");
+    setTimeout(function () {
+        pantallaCerrar.close();
+    }, 10000);
 });
 
 // Para ir a la pantalla de solo audio
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtener el botón "Solo audio"
     var proyectarButton = document.getElementById("btn_audio");
-
-    // Agregar un event listener al botón
     proyectarButton.addEventListener("click", function () {
-        // Mostrar la pantalla intermedia
-        pantallaIntermediaProyectar();
-
-        // Esperar 30 segundos antes de redirigir a otra página
+        var ventanaPantallaIntermedia = window.open("../PantallaTransaccion/pantalla_animacion_proyector.html", "_blank", "width=600,height=400");
         setTimeout(function () {
-            // Redirigir a otra página HTML
+            ventanaPantallaIntermedia.close();
             window.location.href = "../PantallaSoloAudio/index.html";
-        }, 10000); // 10 segundos en milisegundos
+        }, 10000);
     });
 });
-function pantallaIntermediaProyectar() {
-    // Obtener el contenido HTML y los estilos CSS de la pantalla intermedia desde archivos externos
-    Promise.all([
-        fetch("../PantallaTransaccion/pantalla_animacion_proyector.html").then(response => response.text()),
-        fetch("../PantallaTransaccion/css/style.css").then(response => response.text())
-    ])
-        .then(([html, css]) => {
-            // Abrir una nueva ventana
-            var nuevaVentana = window.open("", "_blank");
-
-            // Escribir el contenido HTML y los estilos CSS en la nueva ventana
-            nuevaVentana.document.write(`
-            <html>
-            <head>
-                <style>${css}</style>
-            </head>
-            <body>
-                ${html}
-            </body>
-            </html>
-        `);
-            setTimeout(function () {
-                nuevaVentana.close();
-            }, 10000);
-        })
-        .catch(error => console.error("Error al cargar la pantalla intermedia:", error));
-}
 
 // Para ir a la pantalla de proyectar
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Obtener el botón "Solo audio"
+document.addEventListener("DOMContentLoaded", function (){
     var proyectarButton = document.getElementById("btn_proyector");
-
-    // Agregar un event listener al botón
     proyectarButton.addEventListener("click", function () {
-        // Mostrar la pantalla intermedia
-        pantallaIntermediaProyectar();
-
-        // Esperar 30 segundos antes de redirigir a otra página
+        var ventanaPantallaIntermedia = window.open("../PantallaTransaccion/pantalla_animacion_proyector.html", "_blank", "width=600,height=400");
         setTimeout(function () {
-            // Redirigir a otra página HTML
+            ventanaPantallaIntermedia.close();
             window.location.href = "../PantallaProyectar/index.html";
-        }, 10000); // 10 segundos en milisegundos
+        }, 10000);
     });
 });
 
@@ -86,22 +48,19 @@ document.addEventListener("DOMContentLoaded", function () {
 // Para ir a la pantalla de grabar
 var divClickable = document.getElementById('btn_grabar');
 divClickable.addEventListener('click', function() {
-    // Redirigir a otro sitio
-    window.location.href = '../PantallaGestion/pantalla_animacion_grabacion.html';
+    window.open = '../PantallaGestion/pantalla_animacion_grabacion.html';
 });
 
 // Para ir a la pantalla de encender proyector
 var divClickable = document.getElementById('btn_proyectar');
 divClickable.addEventListener('click', function() {
-    // Redirigir a otro sitio
-    window.location.href = '../PantallaGestion/pantalla_animacion_apagar_proyector.html';
+    window.open = '../PantallaGestion/pantalla_animacion_apagar_proyector.html';
 });
 
 // Para ir a la pantalla de seleccionar fuente
 var divClickable = document.getElementById('btn_fuente');
 divClickable.addEventListener('click', function() {
-    // Redirigir a otro sitio
-    window.location.href = '../PantallaFuente/index.html';
+    window.open = '../PantallaFuente/index.html';
 });
 
 

@@ -2,7 +2,7 @@
 
 body {
 
-    padding: auto;
+
     height: auto;
     font-family: 'Inter', sans-serif;
 
@@ -82,7 +82,7 @@ i {
 }
 
 
-#button3{
+#btn_audio{
 
     background-color: rgba(243, 243, 243, 0.56);
     background-size: cover;
@@ -100,7 +100,7 @@ i {
 }
 
 
-#button4{
+#btn_proyector{
 
     background-color: rgba(243, 243, 243, 0.56);
     background-size: cover;
@@ -117,7 +117,7 @@ i {
 
 }
 
-#button5{
+#btn_video{
 
     background-color: rgba(243, 243, 243, 0.56);
     background-size: cover;
@@ -164,7 +164,7 @@ footer {
     margin-top: 11.5%;
     border-radius: 0;
     padding-right: 2%;
-    margin-right: -0, 5%;
+    margin-right: -0.5%;
     text-align: center;
 
 

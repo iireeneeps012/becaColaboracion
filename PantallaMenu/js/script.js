@@ -1,119 +1,51 @@
 // GESTION DE ENLACES //
 
 // Para ir a la pantalla de apagar
-var divClickable = document.getElementById('button2');
+var divClickable = document.getElementById('btn_power');
 divClickable.addEventListener('click', function() {
-    // Redirigir a otro sitio
-    window.location.href = '../PantallaTransaccion/pantalla_animacion_apagar_sistema.html';
-    setTimeout(function() {
-        window.close();
-    }, 9000);
+    var pantallaCerrar = window.open("../PantallaTransaccion/pantalla_animacion_apagar_sistema.html", "_blank", "width=600,height=400");
+    setTimeout(function () {
+        pantallaCerrar.close();
+    }, 10000);
 });
+
+
 
 // Para ir a la solo audio
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtener el botón "Solo audio"
-    var soloAudioButton = document.getElementById("button3");
-
-    // Agregar un event listener al botón
-    soloAudioButton.addEventListener("click", function () {
-        // Mostrar la pantalla intermedia
-        pantallaIntermediaSoloAudio();
-
-        // Esperar 30 segundos antes de redirigir a otra página
+    var proyectarButton = document.getElementById("btn_proyector");
+    proyectarButton.addEventListener("click", function () {
+        var ventanaPantallaIntermedia = window.open("../PantallaTransaccion/pantalla_animacion_proyector.html", "_blank", "width=600,height=400");
         setTimeout(function () {
-            // Redirigir a otra página HTML
+            ventanaPantallaIntermedia.close();
             window.location.href = "../PantallaSoloAudio/index.html";
-        }, 10000); // 10 segundos en milisegundos
+        }, 10000);
     });
 });
-function pantallaIntermediaSoloAudio() {
-    // Obtener el contenido HTML y los estilos CSS de la pantalla intermedia desde archivos externos
-    Promise.all([
-        fetch("../PantallaTransaccion/pantalla_animacion_equipo.html").then(response => response.text()),
-        fetch("../PantallaTransaccion/css/style.css").then(response => response.text())
-    ])
-        .then(([html, css]) => {
-            // Abrir una nueva ventana
-            var nuevaVentana = window.open("", "_blank");
 
-            // Escribir el contenido HTML y los estilos CSS en la nueva ventana
-            nuevaVentana.document.write(`
-            <html>
-            <head>
-                <style>${css}</style>
-            </head>
-            <body>
-                ${html}
-            </body>
-            </html>
-        `);
-            setTimeout(function () {
-                nuevaVentana.close();
-            }, 10000);
-        })
-        .catch(error => console.error("Error al cargar la pantalla intermedia:", error));
-}
+
 
 //Para ir a la pantalla de proyectar
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtener el botón "Solo audio"
-    var proyectarButton = document.getElementById("button4");
-
-    // Agregar un event listener al botón
+    var proyectarButton = document.getElementById("btn_proyector");
     proyectarButton.addEventListener("click", function () {
-        // Mostrar la pantalla intermedia
-        pantallaIntermediaProyectar();
-
-        // Esperar 30 segundos antes de redirigir a otra página
+        var ventanaPantallaIntermedia = window.open("../PantallaTransaccion/pantalla_animacion_proyector.html", "_blank", "width=600,height=400");
         setTimeout(function () {
-            // Redirigir a otra página HTML
+            ventanaPantallaIntermedia.close();
             window.location.href = "../PantallaProyectar/index.html";
-        }, 10000); // 10 segundos en milisegundos
+        }, 10000);
     });
 });
-function pantallaIntermediaProyectar() {
-    // Obtener el contenido HTML y los estilos CSS de la pantalla intermedia desde archivos externos
-    Promise.all([
-        fetch("../PantallaTransaccion/pantalla_animacion_proyector.html").then(response => response.text()),
-        fetch("../PantallaTransaccion/css/style.css").then(response => response.text())
-    ])
-        .then(([html, css]) => {
-            // Abrir una nueva ventana
-            var nuevaVentana = window.open("", "_blank");
 
-            // Escribir el contenido HTML y los estilos CSS en la nueva ventana
-            nuevaVentana.document.write(`
-            <html>
-            <head>
-                <style>${css}</style>
-            </head>
-            <body>
-                ${html}
-            </body>
-            </html>
-        `);
-            setTimeout(function () {
-                nuevaVentana.close();
-            }, 10000);
-        })
-        .catch(error => console.error("Error al cargar la pantalla intermedia:", error));
-}
 
 // Para ir a la pantalla de videoconferencia
 document.addEventListener("DOMContentLoaded", function () {
-    // Obtener el botón "Solo audio"
-    var videoConferenciaButton = document.getElementById("button5");
-
-    // Agregar un event listener al botón
-    videoConferenciaButton.addEventListener("click", function () {
-        // Mostrar la pantalla intermedia
-        pantallaIntermediaProyectar();
-
-        // Esperar 30 segundos antes de redirigir a otra página
+    var proyectarButton = document.getElementById("btn_video");
+    proyectarButton.addEventListener("click", function () {
+        var ventanaPantallaIntermedia = window.open("../PantallaTransaccion/pantalla_animacion_proyector.html", "_blank", "width=600,height=400");
         setTimeout(function () {
-            // Redirigir a otra página HTML
+            ventanaPantallaIntermedia.close();
             window.location.href = "../PantallaVideoconferencia/index.html";
-        }, 10000); // 10 segundos en milisegundos
+        }, 10000);
     });
 });
