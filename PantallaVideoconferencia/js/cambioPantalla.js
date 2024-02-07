@@ -48,19 +48,20 @@ document.addEventListener("DOMContentLoaded", function (){
 // Para ir a la pantalla de grabar
 var divClickable = document.getElementById('btn_grabar');
 divClickable.addEventListener('click', function() {
-    window.open = '../PantallaGestion/pantalla_animacion_grabacion.html';
+    window.open("../PantallaGestion/pantalla_animacion_grabacion.html", "_blank", "width=600,height=400");
+
 });
 
 // Para ir a la pantalla de encender proyector
 var divClickable = document.getElementById('btn_proyectar');
 divClickable.addEventListener('click', function() {
-    window.open = '../PantallaGestion/pantalla_animacion_apagar_proyector.html';
+    window.open("../PantallaGestion/pantalla_animacion_apagar_proyector.html", "_blank", "width=600,height=400");
 });
 
 // Para ir a la pantalla de seleccionar fuente
 var divClickable = document.getElementById('btn_fuente');
 divClickable.addEventListener('click', function() {
-    window.open = '../PantallaFuente/index.html';
+    window.open("../PantallaFuente/index.html", "_blank", "width=600,height=400");
 });
 
 

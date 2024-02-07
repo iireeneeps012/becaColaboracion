@@ -6,6 +6,7 @@ divClickable.addEventListener('click', function() {
     var pantallaCerrar = window.open("../PantallaTransaccion/pantalla_animacion_apagar_sistema.html", "_blank", "width=600,height=400");
     setTimeout(function () {
         pantallaCerrar.close();
+        window.close();
     }, 10000);
 });
 
@@ -13,7 +14,7 @@ divClickable.addEventListener('click', function() {
 
 // Para ir a la solo audio
 document.addEventListener("DOMContentLoaded", function () {
-    var proyectarButton = document.getElementById("btn_proyector");
+    var proyectarButton = document.getElementById("btn_audio");
     proyectarButton.addEventListener("click", function () {
         var ventanaPantallaIntermedia = window.open("../PantallaTransaccion/pantalla_animacion_proyector.html", "_blank", "width=600,height=400");
         setTimeout(function () {
