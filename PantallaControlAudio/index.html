@@ -42,67 +42,63 @@
 
         <div class="row full-height division_general">
             <div class="col-md-10 col_izq ">
-
-                <div class="container mt-4">
-                    <div class="row no-gutters contenedor">
-                        <div class="col-md-4">
-                            <div class="p-3 mb-0 custom-card">
+                    <div class="contenedor_gen row container-fluid">
+                        <div class="col-md-4 col_micro_techo">
+                            <div class="row fila_logos">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Micro techo</p>
                             </div>
-                            <div class="p-3 mb-0 custom-card">
+                            <div class="row fila_max" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Máximo</p>
                             </div>
-                            <div class="border p-3 mb-0 custom-card">
+                            <div class="row fila_normal" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Normal</p>
                             </div>
-                            <div class="border p-3 mb-0 custom-card">
+                            <div class="row fila_min" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Mínimo</p>
                             </div>
                         </div>
-                        <div class="col-md-4 text-center">
-                            <div class="p-3 mb-0 custom-card">
+                        <div class="col-md-4 col_micro_mesa">
+                            <div class="row fila_logos">
                                 <i class="bi bi-mic"></i>
                                 <p>Micro mesa</p>
                             </div>
-                            <div class="border p-3 mb-0 custom-card">
+                            <div class="row fila_max" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Máximo</p>
                             </div>
-                            <div class="border p-3 mb-0 custom-card">
+                            <div class="row fila_normal" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Normal</p>
                             </div>
-                            <div class="border p-3 mb-0 custom-card">
+                            <div class=" row fila_min" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Mínimo</p>
                             </div>
                         </div>
-                        <div class="col-md-4 text-center">
-                            <div class="p-3 mb-0 custom-card">
+                        <div class="col-md-4 col_pc">
+                            <div class="row fila_logos">
                                 <i class="bi bi-tv"></i>
                                 <p>PC</p>
                             </div>
-                            <div class="border p-3 mb-0 custom-card">
+                            <div class="row fila_max" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Máximo</p>
                             </div>
-                            <div class="border p-3 mb-0 custom-card">
+                            <div class="row fila_normal" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Normal</p>
                             </div>
-                            <div class="border p-3 mb-0 custom-card">
+                            <div class="row fila_min" onclick="changeColor(this)">
                                 <i class="bi bi-bar-chart-fill"></i>
                                 <p>Mínimo</p>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                
             </div>
             <div class="col-md-2 col_drch">
                 <div class="col-md-12 custom-section sub3division">
@@ -111,23 +107,22 @@
                             <aside>
                                 <!-- Barra animada de progreso vertical -->
                                 <div id="progressContainer">
-                                    <div class="vertical-progress-bar" id="verticalProgressBar" onmousedown="startDragging(event)">
-                                        <div id="progressFill" class="progress-fill" style="height: 50%;"></div>
+                                    <div class="vertical-progress-bar" id="verticalProgressBar"
+                                         onmousedown="startDragging(event)">
+                                        <div class="progress-fill" id="progressFill" style="height: 50%;"></div>
                                     </div>
                                 </div>
-    
+
                                 <!-- Botones de volumen -->
                                 <div class="volume-buttons">
-                                    <button class="volume-button" onclick="adjustVolume(10)">Volumen 1</button>
-                                    <button class="volume-button" onclick="adjustVolume(-10)">Volumen 2</button>
-                                    <button class="volume-button" onclick="adjustVolume(-100)">Volumen 3</button>
+                                    <button id="volumeUpButton" class="volume-button" onclick="adjustVolume(10)"><i class="bi bi-volume-up"></i></button>
+                                    <button id="volumeDownButton" class="volume-button" onclick="adjustVolume(-10)"><i class="bi bi-volume-down"></i></button>
+                                    <button id="muteButton" class="volume-button volume-button_mute" onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
                                 </div>
                             </aside>
                         </div>
                     </div>
                 </div>
-                
-
             </div>
         </div>
 
@@ -140,6 +135,7 @@
 
     <script src="js/script.js"></script>
     <script src="js/barra.js"></script>
+    <script src="js/cambiarColor.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     
     
