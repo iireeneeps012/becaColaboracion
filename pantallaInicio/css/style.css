@@ -1,0 +1,31 @@
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.contenedor {
+    text-align: center;
+}
+
+.imagen {
+    max-width: 40%; /* Tamaño mediano */
+    margin-bottom: 10%;
+    color: white;
+}
+
+.boton {
+    background-color: #f2f2f2;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 2%; /* Espacio entre la imagen y el botón */
+}
