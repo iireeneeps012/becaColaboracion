@@ -1,17 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 body {
-
-
     height: auto;
     font-family: 'Inter', sans-serif;
-
 }
 
 i {
     font-size: 2.20em;
 }
-
 
 .full-height {
     height: 100vh;
@@ -21,51 +17,37 @@ i {
     text-align: center;
 }
 
-
-.button-with-bg {
+.encabezado {
     background-size: cover;
     background-position: center;
     margin-bottom: 10%;
-    height: 100%;
+    height: 30%; /* Ajusta la altura según tus necesidades */
 }
-
-/*estilos para la primera seccion*/
-.division1 {
-
-    height: 10%;
-    width: auto;
-}
-
 .sub1division1 {
     background-color: #CB0017;
     display: flex;
     align-items: center;
     justify-content: center;
     color: #FFFFFF;
+    height: auto;
+}
+.sub1division2 {
+
+    height: auto;
 }
 
-.boton1 {
+.botonAyuda {
     background-color: rgba(243, 243, 243, 0.56);
     background-size: cover;
+
 }
 
-.boton2 {
+.botonApagar {
     background-color: rgba(100, 100, 100, 0.568);
     background-size: cover;
 }
 
 
-/*estilos para la segunda seccion*/
-.division2 {
-    height: 60%;
-    width: auto;
-
-}
-
-.sub2division {
-
-
-}
 
 .sub-section1 {
     display: flex;
@@ -74,108 +56,43 @@ i {
     align-items: center;
 }
 
-.sub-section2 {
+.sectionBotones {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 1%;
 }
 
-
-#btn_audio{
-
-    background-color: rgba(243, 243, 243, 0.56);
-    background-size: cover;
-    border-radius: 0;
-    padding: 1.5%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px rgb(214, 214, 214) solid;
-
-
-}
-
-
-#btn_proyector{
-
-    background-color: rgba(243, 243, 243, 0.56);
-    background-size: cover;
-    border-radius: 0;
-    padding: 1.5%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px rgb(214, 214, 214) solid;
-
-
-}
-
-#btn_video{
-
-    background-color: rgba(243, 243, 243, 0.56);
-    background-size: cover;
-    border-radius: 0;
-    padding: 1.5%;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    border: 1px rgb(214, 214, 214) solid;
-
-}
-
-/*FOOTER*/
-
-footer {
-
-
-    width: 100%;
-    position: relative;
-    bottom: 0;
-    text-align: right;
-
-
-}
-
-
-.button-with-icon {
+/* Estilos para los botones */
+.botones{
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     flex-direction: column; /* Invierte la dirección de los elementos en la fila */
+    width: 100%; /* Ancho del botón, ajusta según necesites */
+    height: 120%; /* Alto del botón, ajusta según necesites */
+    padding: 1%; /* Espaciado interno del botón, ajusta según necesites */
+    background-color: rgba(243, 243, 243, 0.56); /* Color de fondo del botón */
+    border: 1px solid rgb(214, 214, 214); /* Borde del botón */
+    border-radius: 0; /* Radio del borde del botón, ajusta según necesites */
+    margin-top: 10%;
+    background-size: cover;
+    padding: 1.5%;
+
 }
 
 
-#footer-button {
+
+.btn_footer {
     /* Ajustes adicionales según tus necesidades */
     background-color: rgba(243, 243, 243, 0.56);
     border-color: rgb(214, 214, 214); /* Ejemplo de color de borde del botón */
     color: #000000; /* Ejemplo de color del texto del botón */
-    margin-top: 11.5%;
+    position: fixed; /* Fijar posición */
+    bottom: 0; /* Colocar al borde inferior */
+    right: 0; /* Colocar al borde derecho */
     border-radius: 0;
-    padding-right: 2%;
-    margin-right: -0.5%;
+    padding: 10px; /* Añadir relleno para espaciar el contenido del botón */
     text-align: center;
-
-
 }
-
-
-
-
-
-
-
-
-
-

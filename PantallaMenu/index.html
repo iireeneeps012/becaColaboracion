@@ -2,79 +2,72 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="node_modules/bootstrap/dist/css/bootstrap.css" media="all" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
-          rel="stylesheet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-<div class="container-fluid full-height ">
+<div class="container-fluid">
     <!-- Primera sección con dos columnas juntas (70% - 30%) -->
-    <div class="row full-height division1">
-        <div class="col-md-10 custom-section sub1division1">
+    <div class="row encabezado">
+        <div class="col-md-8 custom-section sub1division1">
             <h2 class="enunciado-div1">Modos de uso</h2>
         </div>
-        <div class="col-md-2 custom-section sub1division2">
-
-            <div class="row h-100">
-
-                <div id="divBotonAyuda" class="col-md-6 sub1division2-division1 boton1">
-                    <button class="btn button-with-bg w-100" id="btn_ayuda">
-                        <i class="bi bi-journal-bookmark-fill "></i>
-                    </button>
+        <div class="col-md-4 custom-section sub1division2">
+            <div class="row">
+                <div id="btn_ayuda" class="col-md-6 sub1division2-division1 botonAyuda">
+                        <i class="bi bi-journal-bookmark-fill"></i>
                 </div>
-                <div id="divBotonApagar" class="col-md-6 boton2">
-                    <button class="btn button-with-bg w-100" id="btn_power">
-                        <i class="bi bi-power  "></i>
-                    </button>
+                <div id="btn_power" class="col-md-6 botonApagar">
+                        <i class="bi bi-power"></i>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- Segunda sección dividida en dos filas (50% - 50%) -->
-    <div class="row full-height division2">
+    <!-- Segunda sección sin fila adicional -->
+    <div class="col-md-12 custom-section sub2division">
+        <div class="sub-section1">
+            <h4>Hola, ¿qué deseas hacer?</h4>
+        </div>
+    </div>
 
-        <div class="col-md-12 custom-section sub2division">
-            <!-- Subsección con un título -->
-            <div class="sub-section1">
-                <h4>Hola, ¿qué deseas hacer?</h4>
-            </div>
+        <div class="row">
 
-            <!-- Subsección con tres botones con iconos -->
-            <div class="sub-section2">
-                <div class="btn button-with-bg button-with-icon"  id="btn_audio">
-                    <i class="bi bi-volume-up  "></i>
+            <div class="col-md-4"></div>
+
+            <div class="col-md-4 sectionBotones" role="group" aria-label="Basic example">
+                <div class="botones btn_audio" id="btn_audio">
+                    <i class="bi bi-volume-up"></i>
                     <span>Solo audio</span>
                 </div>
-
-                <div class="btn button-with-bg button-with-icon" id="btn_proyector">
-                    <i class="bi bi-cast "></i> <span>Proyectar</span>
+                <div class="botones btn_proyector" id="btn_proyector">
+                    <i class="bi bi-cast"></i>
+                    <span>Proyectar</span>
                 </div>
-
-                <div class="btn button-with-bg button-with-icon" id="btn_video">
-                    <i class="bi bi-person-video3 "></i> <span>Videoconferencia</span>
+                <div class="botones btn_video" id="btn_video">
+                    <i class="bi bi-person-video3"></i>
+                    <span>Videoconferencia</span>
                 </div>
             </div>
+
+            <div class="col-md-4"></div>
+
+
         </div>
 
-    </div>
-
-    <footer>
-        <button class="btn button-with-icon" id="footer-button">
-            <i class="bi bi-question-circle"></i>
-            <span>Ayuda</span>
-        </button>
+    <footer class="row">
+        <div class="col-md-12">
+            <button class="btn button-with-icon btn_footer" id="btn_footerAyuda">
+                <i class="bi bi-question-circle"></i>
+                <span>Ayuda</span>
+            </button>
+        </div>
     </footer>
-
-</div>
-
-
 </div>
 
 <script src="js/script.js"></script>
