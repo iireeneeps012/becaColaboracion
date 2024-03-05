@@ -7,7 +7,7 @@
 body{
     background-color: #0f72e5;
 }
-.popup{
+.popupCarga{
     background-color: white;
     width:450px;
     padding: 30px 40px;
@@ -20,7 +20,7 @@ body{
     font-family: Arial, sans-serif
 }
 
-.popup button{
+.popupCarga button{
     display: block;
     margin: 0 0 20px auto;
     background-color: transparent;
@@ -31,7 +31,7 @@ body{
     cursor: pointer;
 }
 
-.popup p{
+.popupCarga p{
 
     font-size: 20px;
     text-align: justify ;
