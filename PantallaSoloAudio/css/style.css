@@ -1,8 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-
-
 /**/
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
 
 *{
     font-family: 'Inter', sans-serif;
@@ -10,21 +22,20 @@
 
 i {
     font-size: 2.20em;
+    margin: 2%;
 }
 
 .full-height {
     height: 100vh;
 }
 
-
-
-
-/* Barra superior*/
+/*Barra superior*/
 
 .division_nav {
     height: 10%;
     background-color: #CB0017;
     color: white;
+    text-decoration: none;
 }
 
 /* Barra superior: boton de vuelta atrás*/
@@ -36,18 +47,23 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
+    color:white;
+    text-decoration: none;
 }
+
 /* Barra superior: enunciado del medio*/
 .division_nav_audio {
     height: 100%;
-
     display: flex;
     align-items: center;
     font-size: large;
+    text-decoration: none;
 }
+
 /* Barra superior: boton ayuda y apagar*/
 .division_nav_bloque {
     height: 100%;
+
 }
 
 .division_bloque_ayuda {
@@ -57,6 +73,8 @@ i {
     justify-content: center;
     color: black;
     align-items: center;
+    text-decoration: none;
+
 }
 
 .division_bloque_power {
@@ -66,47 +84,61 @@ i {
     justify-content: center;
     color: white;
     align-items: center;
+    text-decoration: none;
 }
-
 /**/
 
 .division_general {
     height: 90%;
-    text-align: center;
+
 }
 
-
+.col_izq {
+    border-right: 0.5px solid #fff4f4;
+}
 
 .division_mod_uso {
     width: auto;
+    text-align: center;
     height: 20%;
     background-color: #c2bbbb;
-    text-align: center;
-}
-.div_cab_mod_uso{
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-decoration: none;
 }
 
 .divsion_check_camara {
     display: flex;
     align-items: center;
     justify-content: center;
-
     background-color: white;
+    text-decoration: none;
 
 }
 
+/*modos de uso*/
 .division_general_mod_uso {
     height: 100%;
-
-
+    width: auto;
+}
+.divsion_cabecera_mod_uso{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+.col_btn_audio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
 }
 
-.col_btn_audio{
+.col_btn_proyector i{
+    color: white;
+}
 
+.col_btn_proyector {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -114,61 +146,55 @@ i {
     text-align: center;
     background-color: orange;
     color: white;
+    text-decoration: none;
 }
-.col_btn_proyector {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
 .col_btn_video {
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none;
 }
+/**/
 
-/*división general*/
-
+/*pantalla general*/
 .division_mod_general {
     width: 100%;
     height: 70%;
-
-}
-
-
-/**/
-
-.icon-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-
+    align-items: center;
+    text-align: center;
 }
-/**/
 
+.icono-container{
+ text-align: center;
+}
+
+
+/**/
 .division_mod_bot_conf {
     background-color: rgb(185, 185, 185);
     height: 10%;
-
 }
 
-.division_boton_conf_audio {
+
+.division_boton_conf_manual {
     background-color: rgb(221, 212, 208);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    text-decoration: none;
 }
+.division_boton_conf_manual a{
+    text-decoration: none;
+}
+
 
 .col_drch{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }

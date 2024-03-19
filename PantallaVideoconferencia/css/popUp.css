@@ -1,0 +1,228 @@
+* {
+    font-style: normal;
+}
+i{
+    color: black;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+
+/*Estilos genericos*/
+.popupCarga {
+    background-color: #ffffff;
+    width: 50%; /* Tamaño más pequeño */
+    height: 50%; /* Tamaño más pequeño */
+    padding: 5%; /* Reducir el relleno para que se vea más pequeño */
+    transform: translate(-50%, -50%); /* Centrar vertical y horizontalmente */
+    left: 50%;
+    top: 50%;
+    display: none;
+    font-family: Arial, sans-serif;
+    position: fixed; /* Cambiar a posición fija para que sea relativo a la ventana */
+    overflow: hidden; /* Evitar que el contenido se desborde */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+    border-radius: 0; /* Agregar esquinas redondeadas */
+    z-index: 1001;
+}
+
+.popupControl{
+    background-color: #ffffff;
+    width: 40%;
+    height: 40%;
+    padding: 5%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    display: none;
+    font-family: Arial, sans-serif;
+    position: fixed;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 0;
+    z-index: 1001;
+    margin-top: -5%;
+}
+
+
+/*Para Controles*/
+
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -10%;
+}
+.icon {
+    font-size: 4em;
+}
+.enunH3 {
+    text-align: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+.enunParrafo {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 2.5%;
+}
+.botonesGestion {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 30vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.btnSi,
+.btnNo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 8vh;
+    width: 10vw;
+    margin-top: 2vh;
+    background-color: #242828;
+    color: white;
+    border-radius: 0;
+}
+.btnNo {
+    background-color: #a0a2a2;
+}
+
+/*Para la transacción de inicio*/
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px; /* Reducir el espacio entre los elementos */
+}
+
+.volume-icon {
+    font-size: 2em; /* Reducir el tamaño del icono */
+    margin-bottom: 10px; /* Reducir el espacio entre el icono y el texto */
+}
+
+h3 {
+    margin-bottom: 10px; /* Reducir el espacio entre el texto y los puntos */
+}
+
+.dot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px; /* Reducir el espacio entre los puntos y el borde inferior del div */
+}
+
+.dot {
+    width: 5px; /* Reducir el tamaño de los puntos */
+    height: 5px; /* Reducir el tamaño de los puntos */
+    background-color: #000; /* Color de los puntos */
+    border-radius: 50%;
+    margin: 0 2px; /* Reducir el espacio entre los puntos */
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    to {
+        transform: translateY(-5px); /* Reducir la distancia de la animación */
+    }
+}
+
+/*Para Fuente*/
+
+.close-button {
+    border: 0;
+    background-color: #d9d2d2;
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    position: absolute; /* Cambiado a posición absoluta */
+    top: 0; /* Alinea el botón en la parte superior */
+    left: 0; /* Alinea el botón a la derecha */
+}
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5%; /* Reducir el espacio entre los elementos */
+    height: 100%;
+}
+.headerFuentes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%; /* Reducir el espacio entre los elementos */
+}
+.contenedor_botones{
+    display: flex;
+    justify-content: center;
+    background: #bec4c7;
+    height: 90%;
+    width: 100%;
+    margin-top: 2%;
+   /* margin-bottom: 30%; /* Aumentar el espacio entre los botones y el borde superior del div */
+
+}
+.botn_contr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px black solid;
+    text-align: center;
+    padding-top: 5%; /* Espacio entre el borde y el contenido */
+    padding-bottom: 5%; /* Espacio entre el borde y el contenido */
+
+}
+
+
+/*Para Teams*/
+
+.close-button {
+    border: 0;
+    background-color: #4b4949;
+    color: white;
+    display: flex;
+    justify-content: flex-end; /* Alinea el botón a la derecha */
+    position: absolute; /* Cambiado a posición absoluta */
+    top: 0; /* Alinea el botón en la parte superior */
+    left: 0; /* Alinea el botón a la derecha */
+}
+.header h2 {
+    display: flex;
+    justify-content: left;
+    text-align: left; /* Alineación del texto a la izquierda */
+    margin-bottom: 5%;
+    margin-top: -5%;
+}
+
+.header h5 {
+    display: flex;
+
+    margin-bottom:5%;
+}
+
+
+.dropdown-container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+
+
+.text_option{
+    background-color: #c2bbbb;
+    text-align:inherit;
+}

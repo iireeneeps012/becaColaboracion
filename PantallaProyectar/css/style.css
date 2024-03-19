@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /**/
+a{
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+a:visited{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+
 *{
     font-family: 'Inter', sans-serif;
 }
@@ -20,6 +35,7 @@ i {
     height: 10%;
     background-color: #CB0017;
     color: white;
+    text-decoration: none;
 }
 
 /* Barra superior: boton de vuelta atrás*/
@@ -32,6 +48,7 @@ i {
     justify-content: center;
     align-items: center;
     color:white;
+    text-decoration: none;
 }
 
 /* Barra superior: enunciado del medio*/
@@ -40,6 +57,7 @@ i {
     display: flex;
     align-items: center;
     font-size: large;
+    text-decoration: none;
 }
 
 /* Barra superior: boton ayuda y apagar*/
@@ -55,6 +73,7 @@ i {
     justify-content: center;
     color: black;
     align-items: center;
+    text-decoration: none;
 
 }
 
@@ -65,10 +84,8 @@ i {
     justify-content: center;
     color: white;
     align-items: center;
+    text-decoration: none;
 }
-
-
-
 /**/
 
 .division_general {
@@ -85,6 +102,7 @@ i {
     text-align: center;
     height: 20%;
     background-color: #c2bbbb;
+    text-decoration: none;
 }
 
 .divsion_check_camara {
@@ -92,28 +110,33 @@ i {
     align-items: center;
     justify-content: center;
     background-color: white;
+    text-decoration: none;
 
 }
 
+/*modos de uso*/
 .division_general_mod_uso {
     height: 100%;
     width: auto;
-
 }
 .divsion_cabecera_mod_uso{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
 }
-
 .col_btn_audio {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none;
 }
 
+.col_btn_proyector i{
+    color: white;
+}
 
 .col_btn_proyector {
     display: flex;
@@ -123,8 +146,8 @@ i {
     text-align: center;
     background-color: orange;
     color: white;
+    text-decoration: none;
 }
-
 
 .col_btn_video {
     display: flex;
@@ -132,10 +155,11 @@ i {
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-decoration: none;
 }
+/**/
 
-
-
+/*pantalla general*/
 .division_mod_general {
     width: 100%;
     height: 70%;
@@ -143,7 +167,6 @@ i {
     justify-content: center;
     align-items: center;
     text-align: center;
-
 }
 
 
@@ -256,8 +279,12 @@ i {
     justify-content: center;
     align-items: center;
     text-align: center;
-
+    text-decoration: none;
 }
+.division_boton_conf_manual a{
+    text-decoration: none;
+}
+
 
 .col_drch{
     display: flex;
