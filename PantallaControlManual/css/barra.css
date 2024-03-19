@@ -41,12 +41,12 @@
 .volume-button_mute {
     border-bottom: 0.2px solid #989898;
 }
+
 /* Estilo cuando se pulsa */
 .volume-button_mute.pulsado {
     background-color: orange;
     color: white;
 }
-
 
 
 h4 {

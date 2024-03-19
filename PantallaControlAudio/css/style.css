@@ -1,7 +1,5 @@
-
-
 /**/
-*{
+* {
     font-family: 'Inter', sans-serif;
 }
 
@@ -13,6 +11,7 @@ i {
 .full-height {
     height: 100vh;
 }
+
 /*encabezado*/
 
 /*Barra superior*/
@@ -32,7 +31,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
 }
 
 /* Barra superior: enunciado del medio*/
@@ -48,6 +47,7 @@ i {
     height: 100%;
 
 }
+
 .division_bloque_ayuda {
     background-color: rgb(221, 212, 208);
     height: 100%;
@@ -70,21 +70,21 @@ i {
 }
 
 
-
 /**/
 
 /*Segunda con el contenido general de la pantalla*/
 
-.division_general{
+.division_general {
     height: 90%;
-    
+
 }
-.col_izq{
+
+.col_izq {
     border: 1px solid black;
 }
 
 
-.contenedor_gen{
+.contenedor_gen {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@ i {
 
 }
 
-.col_micro_techo,.col_micro_mesa,.col_pc{
+.col_micro_techo, .col_micro_mesa, .col_pc {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,7 +104,7 @@ i {
 }
 
 
-.fila_logos{
+.fila_logos {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ i {
 
 }
 
-.fila_max, .fila_normal, .fila_min{
+.fila_max, .fila_normal, .fila_min {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +132,7 @@ i {
 
 /**/
 
-.col_drch{
+.col_drch {
     display: flex;
     flex-direction: column;
     justify-content: center;

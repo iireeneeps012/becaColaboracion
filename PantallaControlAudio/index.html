@@ -2,142 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="css/barra.css">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" type="text/css">
+    <link href="css/barra.css" rel="stylesheet">
     <title>Pantalla solo audio</title>
 </head>
 
 
 <body>
 
-    <div class="container-fluid full-height">
-        <!-- Primera sección version nav con el enunciad-->
-        <div class="row division_nav">
+<div class="container-fluid full-height">
+    <!-- Primera sección version nav con el enunciad-->
+    <div class="row division_nav">
 
-            <div class="col-md-1 division_nav_back" id="btn_back">
-                    <i class="bi bi-x-square"></i>
-            </div>
+        <div class="col-md-1 division_nav_back" id="btn_back">
+            <i class="bi bi-x-square"></i>
+        </div>
 
-            <div class="col-md-9 division_nav_audio">
-                <i class="bi bi-sliders2"></i>
-                <span class="enunciado-div1">Control de audio avanzado</span>
-            </div>
+        <div class="col-md-9 division_nav_audio">
+            <i class="bi bi-sliders2"></i>
+            <span class="enunciado-div1">Control de audio avanzado</span>
+        </div>
 
-            <div class="col-md-2">
-                <div class="row division_nav_bloque">
-                    <div class="col-md-6 division_bloque_ayuda" id="btn_help">
-                            <i class="bi bi-journal-bookmark-fill"></i>
-                    </div>
-                    <div class="col-md-6 division_bloque_power" id="btn_power">
-                            <i class="bi bi-power"></i>
-                    </div>
+        <div class="col-md-2">
+            <div class="row division_nav_bloque">
+                <div class="col-md-6 division_bloque_ayuda" id="btn_help">
+                    <i class="bi bi-journal-bookmark-fill"></i>
+                </div>
+                <div class="col-md-6 division_bloque_power" id="btn_power">
+                    <i class="bi bi-power"></i>
                 </div>
             </div>
         </div>
-
-        <!-- Segunda con el contenido general de la pantalla-->
-
-        <div class="row full-height division_general">
-            <div class="col-md-10 col_izq ">
-                    <div class="contenedor_gen row container-fluid">
-                        <div class="col-md-4 col_micro_techo">
-                            <div class="row fila_logos">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Micro techo</p>
-                            </div>
-                            <div class="row fila_max" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Máximo</p>
-                            </div>
-                            <div class="row fila_normal" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Normal</p>
-                            </div>
-                            <div class="row fila_min" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Mínimo</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col_micro_mesa">
-                            <div class="row fila_logos">
-                                <i class="bi bi-mic"></i>
-                                <p>Micro mesa</p>
-                            </div>
-                            <div class="row fila_max" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Máximo</p>
-                            </div>
-                            <div class="row fila_normal" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Normal</p>
-                            </div>
-                            <div class=" row fila_min" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Mínimo</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col_pc">
-                            <div class="row fila_logos">
-                                <i class="bi bi-tv"></i>
-                                <p>PC</p>
-                            </div>
-                            <div class="row fila_max" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Máximo</p>
-                            </div>
-                            <div class="row fila_normal" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Normal</p>
-                            </div>
-                            <div class="row fila_min" onclick="changeColor(this)">
-                                <i class="bi bi-bar-chart-fill"></i>
-                                <p>Mínimo</p>
-                            </div>
-                        </div>
-                    </div>
-
-            </div>
-            <div class="col-md-2 col_drch">
-                <div class="col-md-12 custom-section sub3division">
-                    <div class="row h-100">
-                        <div class="col-md-12">
-                            <aside>
-                                <!-- Barra animada de progreso vertical -->
-                                <div id="progressContainer">
-                                    <div class="vertical-progress-bar" id="verticalProgressBar"
-                                         onmousedown="startDragging(event)">
-                                        <div class="progress-fill" id="progressFill" style="height: 50%;"></div>
-                                    </div>
-                                </div>
-
-                                <!-- Botones de volumen -->
-                                <div class="volume-buttons">
-                                    <button id="volumeUpButton" class="volume-button" onclick="adjustVolume(10)"><i class="bi bi-volume-up"></i></button>
-                                    <button id="volumeDownButton" class="volume-button" onclick="adjustVolume(-10)"><i class="bi bi-volume-down"></i></button>
-                                    <button id="muteButton" class="volume-button volume-button_mute" onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
-                                </div>
-                            </aside>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
     </div>
-    
+
+    <!-- Segunda con el contenido general de la pantalla-->
+
+    <div class="row full-height division_general">
+        <div class="col-md-10 col_izq ">
+            <div class="contenedor_gen row container-fluid">
+                <div class="col-md-4 col_micro_techo">
+                    <div class="row fila_logos">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Micro techo</p>
+                    </div>
+                    <div class="row fila_max" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Máximo</p>
+                    </div>
+                    <div class="row fila_normal" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Normal</p>
+                    </div>
+                    <div class="row fila_min" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Mínimo</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col_micro_mesa">
+                    <div class="row fila_logos">
+                        <i class="bi bi-mic"></i>
+                        <p>Micro mesa</p>
+                    </div>
+                    <div class="row fila_max" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Máximo</p>
+                    </div>
+                    <div class="row fila_normal" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Normal</p>
+                    </div>
+                    <div class=" row fila_min" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Mínimo</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col_pc">
+                    <div class="row fila_logos">
+                        <i class="bi bi-tv"></i>
+                        <p>PC</p>
+                    </div>
+                    <div class="row fila_max" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Máximo</p>
+                    </div>
+                    <div class="row fila_normal" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Normal</p>
+                    </div>
+                    <div class="row fila_min" onclick="changeColor(this)">
+                        <i class="bi bi-bar-chart-fill"></i>
+                        <p>Mínimo</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-2 col_drch">
+            <div class="col-md-12 custom-section sub3division">
+                <div class="row h-100">
+                    <div class="col-md-12">
+                        <aside>
+                            <!-- Barra animada de progreso vertical -->
+                            <div id="progressContainer">
+                                <div class="vertical-progress-bar" id="verticalProgressBar"
+                                     onmousedown="startDragging(event)">
+                                    <div class="progress-fill" id="progressFill" style="height: 50%;"></div>
+                                </div>
+                            </div>
+
+                            <!-- Botones de volumen -->
+                            <div class="volume-buttons">
+                                <button class="volume-button" id="volumeUpButton" onclick="adjustVolume(10)"><i
+                                        class="bi bi-volume-up"></i></button>
+                                <button class="volume-button" id="volumeDownButton" onclick="adjustVolume(-10)"><i
+                                        class="bi bi-volume-down"></i></button>
+                                <button class="volume-button volume-button_mute" id="muteButton"
+                                        onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+</div>
 
-    <script src="js/script.js"></script>
-    <script src="js/barra.js"></script>
-    <script src="js/cambiarColor.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
-    
-    
+
+<script src="js/script.js"></script>
+<script src="js/barra.js"></script>
+<script src="js/cambiarColor.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
+
 </body>
 </html>

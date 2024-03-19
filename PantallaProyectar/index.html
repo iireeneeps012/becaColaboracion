@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="css/style.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" type="text/css">
     <link href="css/barra.css" rel="stylesheet">
     <link href="css/popUp.css" rel="stylesheet">
     <title>Pantalla de Proyectar</title>
@@ -18,14 +18,14 @@
     <!-- Primera sección version nav con el enunciad-->
     <div class="row division_nav">
 
-        <div id="btn_back" class="col-md-1 division_nav_back">
-               <a style="text-decoration: none;" href="../PantallaMenu/index.html">
-                   <i  style="color:#e8e5e5;" class="bi bi-arrow-left"></i>
-               </a>
+        <div class="col-md-1 division_nav_back" id="btn_back">
+            <a href="../PantallaMenu/index.html" style="text-decoration: none;">
+                <i class="bi bi-arrow-left" style="color:#e8e5e5;"></i>
+            </a>
         </div>
 
         <div class="col-md-9 division_nav_audio">
-            <i style="color:#e8e5e5;" class="bi bi-display"></i>
+            <i class="bi bi-display" style="color:#e8e5e5;"></i>
             <span class="enunciado-div1">Proyectar</span>
         </div>
 
@@ -35,7 +35,7 @@
                     <i class="bi bi-journal-bookmark-fill"></i>
                 </div>
                 <div class="col-md-6 division_bloque_power" id="btn_power">
-                        <i style="color:#e8e5e5;" class="bi bi-power"></i>
+                    <i class="bi bi-power" style="color:#e8e5e5;"></i>
                 </div>
             </div>
         </div>
@@ -53,21 +53,21 @@
                 <div class="col-md-8">
                     <div class="row division_general_mod_uso">
                         <div class="col-md-4 col_btn_audio" id="btn_audio">
-                                <a href="../PantallaSoloAudio/index.html">
-                                    <i class="bi bi-volume-up"></i>
-                                    <span>Solo audio</span>
-                                </a>
+                            <a href="../PantallaSoloAudio/index.html">
+                                <i class="bi bi-volume-up"></i>
+                                <span>Solo audio</span>
+                            </a>
 
                         </div>
                         <div class="col-md-4 col_btn_proyector" id="btn_proyector">
-                                <i class="bi bi-display"></i>
-                                <span>Proyector</span>
+                            <i class="bi bi-display"></i>
+                            <span>Proyector</span>
                         </div>
                         <div class="col-md-4 col_btn_video" id="btn_video">
-                               <a  href="../PantallaVideoconferencia/index.html">
-                                   <i class="bi bi-camera-video"></i>
-                                   <span>Videoconferencia</span>
-                               </a>
+                            <a href="../PantallaVideoconferencia/index.html">
+                                <i class="bi bi-camera-video"></i>
+                                <span>Videoconferencia</span>
+                            </a>
 
                         </div>
                     </div>
@@ -78,12 +78,12 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-3 division_boton_bloque">
                     <div class="row division_boton_proyector" id="btn_encd_proyector">
-                            <i class="bi bi-display"></i>
-                            <span> Encender Proyector</span>
+                        <i class="bi bi-display"></i>
+                        <span> Encender Proyector</span>
                     </div>
                     <div class="row division_boton_congelar" id="btn_congelar">
-                            <i class="bi bi-aspect-ratio"></i>
-                            <span>Congelar</span>
+                        <i class="bi bi-aspect-ratio"></i>
+                        <span>Congelar</span>
                     </div>
                     <div class="row division_boton_micro" id="btn_micro">
                         <i class="bi bi-mic-fill"></i>
@@ -106,10 +106,10 @@
                 <div class="col-md-3"></div>
                 <div class="col-md-3"></div>
                 <div class="col-md-3 division_boton_conf_manual" id="confAudio-button">
-                      <a class="audioConfig"  href="../PantallaControlAudio/index.html">
-                          <i class="bi bi-sliders2"></i>
-                          <span>Configuración Audio</span>
-                      </a>
+                    <a class="audioConfig" href="../PantallaControlAudio/index.html">
+                        <i class="bi bi-sliders2"></i>
+                        <span>Configuración Audio</span>
+                    </a>
 
                 </div>
             </div>
@@ -129,9 +129,12 @@
 
                             <!-- Botones de volumen -->
                             <div class="volume-buttons">
-                                <button id="volumeUpButton" class="volume-button" onclick="adjustVolume(10)"><i class="bi bi-volume-up"></i></button>
-                                <button id="volumeDownButton" class="volume-button" onclick="adjustVolume(-10)"><i class="bi bi-volume-down"></i></button>
-                                <button id="muteButton" class="volume-button volume-button_mute" onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
+                                <button class="volume-button" id="volumeUpButton" onclick="adjustVolume(10)"><i
+                                        class="bi bi-volume-up"></i></button>
+                                <button class="volume-button" id="volumeDownButton" onclick="adjustVolume(-10)"><i
+                                        class="bi bi-volume-down"></i></button>
+                                <button class="volume-button volume-button_mute" id="muteButton"
+                                        onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
                             </div>
                         </aside>
                     </div>
@@ -193,10 +196,10 @@
     </div>
 
     <div class="row botonesGestion justify-content-end">
-        <div id="btnSalir" class="col-md-6 btnNo">
+        <div class="col-md-6 btnNo" id="btnSalir">
             No
         </div>
-        <div id="btnEncender" class="col-md-6 btnSi">
+        <div class="col-md-6 btnSi" id="btnEncender">
             Si
         </div>
     </div>
@@ -204,7 +207,7 @@
 <!-- -->
 <!-- PopUp  para fuente -->
 <div class="popupControl" id="PopUpFuente">
-    <button id="btnBack" class="close-button" ><i class="bi bi-x-square"></i></button>
+    <button class="close-button" id="btnBack"><i class="bi bi-x-square"></i></button>
     <div class="audio-container">
         <div class="row headerFuentes">
             <i class="bi bi-box-arrow-in-right">Selección de Fuente</i>
@@ -228,8 +231,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 <script src="js/barra.js"></script>

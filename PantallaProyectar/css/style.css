@@ -1,22 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /**/
-a{
+a {
     text-decoration: none;
     color: black;
     text-align: center;
 }
-a:visited{
+
+a:visited {
     text-decoration: none;
     color: black;
 }
-a:hover{
+
+a:hover {
     text-decoration: none;
     color: black;
 }
 
 
-*{
+* {
     font-family: 'Inter', sans-serif;
 }
 
@@ -47,7 +49,7 @@ i {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: white;
     text-decoration: none;
 }
 
@@ -86,6 +88,7 @@ i {
     align-items: center;
     text-decoration: none;
 }
+
 /**/
 
 .division_general {
@@ -119,12 +122,14 @@ i {
     height: 100%;
     width: auto;
 }
-.divsion_cabecera_mod_uso{
+
+.divsion_cabecera_mod_uso {
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
 }
+
 .col_btn_audio {
     display: flex;
     flex-direction: column;
@@ -134,7 +139,7 @@ i {
     text-decoration: none;
 }
 
-.col_btn_proyector i{
+.col_btn_proyector i {
     color: white;
 }
 
@@ -157,6 +162,7 @@ i {
     text-align: center;
     text-decoration: none;
 }
+
 /**/
 
 /*pantalla general*/
@@ -170,7 +176,6 @@ i {
 }
 
 
-
 .division_boton_bloque {
     display: flex;
     flex-direction: column;
@@ -178,7 +183,6 @@ i {
     align-items: center;
     text-align: center;
 }
-
 
 
 .division_boton_bloque i span {
@@ -195,12 +199,11 @@ i {
     align-items: center;
     text-align: center;
 }
+
 .division_boton_proyector:hover {
     background-color: orange;
     color: white;
 }
-
-
 
 
 .division_boton_congelar {
@@ -223,6 +226,7 @@ i {
 .division_boton_congelar.pulsado span {
     content: "Congelado";
 }
+
 /*micro*/
 .division_boton_micro {
     display: flex;
@@ -238,7 +242,7 @@ i {
 
 /**/
 /*fuente*/
-.division_boton_bloq_fnt{
+.division_boton_bloq_fnt {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -255,6 +259,7 @@ i {
     align-items: center;
     text-align: center;
 }
+
 .division_fuente_seleccionada {
     height: 10%;
     margin-top: 10%;
@@ -263,7 +268,6 @@ i {
     align-items: center;
     text-align: center;
 }
-
 
 
 /**/
@@ -281,12 +285,13 @@ i {
     text-align: center;
     text-decoration: none;
 }
-.division_boton_conf_manual a{
+
+.division_boton_conf_manual a {
     text-decoration: none;
 }
 
 
-.col_drch{
+.col_drch {
     display: flex;
     align-items: center;
 }

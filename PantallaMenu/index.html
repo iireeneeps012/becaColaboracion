@@ -2,12 +2,12 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/popUp.css">
+    <link href="css/popUp.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -19,11 +19,11 @@
         </div>
         <div class="col-md-4 custom-section sub1division2">
             <div class="row">
-                <div id="btn_ayuda" class="col-md-6 sub1division2-division1 botonAyuda">
-                        <i class="bi bi-journal-bookmark-fill"></i>
+                <div class="col-md-6 sub1division2-division1 botonAyuda" id="btn_ayuda">
+                    <i class="bi bi-journal-bookmark-fill"></i>
                 </div>
-                <div id="btn_power" class="col-md-6 botonApagar">
-                        <i class="bi bi-power"></i>
+                <div class="col-md-6 botonApagar" id="btn_power">
+                    <i class="bi bi-power"></i>
                 </div>
             </div>
         </div>
@@ -36,73 +36,72 @@
         </div>
     </div>
 
-        <div class="row">
+    <div class="row">
 
-            <div class="col-md-4"></div>
+        <div class="col-md-4"></div>
 
-            <div class="col-md-4 sectionBotones" role="group" aria-label="Basic example">
-                <div class="botones btn_audio" id="btn_audio">
-                    <a href="../PantallaSoloAudio/index.html">
-                        <i class="bi bi-volume-up"></i>
-                        <span>Solo audio</span>
-                    </a>
-                </div>
-                <div class="botones btn_proyector" id="btn_proyector">
-                    <a href="../PantallaProyectar/index.html">
-                        <i class="bi bi-cast"></i>
-                        <span>Proyectar</span>
-                    </a>
-                </div>
-                <div class="botones btn_video" id="btn_video">
-                    <a href="../PantallaVideoconferencia/index.html">
-                        <i class="bi bi-person-video3"></i>
-                        <span>Videoconferencia</span>
-                    </a>
-                </div>
+        <div aria-label="Basic example" class="col-md-4 sectionBotones" role="group">
+            <div class="botones btn_audio" id="btn_audio">
+                <a href="../PantallaSoloAudio/index.html">
+                    <i class="bi bi-volume-up"></i>
+                    <span>Solo audio</span>
+                </a>
             </div>
-
-            <div class="col-md-4"></div>
-
-
+            <div class="botones btn_proyector" id="btn_proyector">
+                <a href="../PantallaProyectar/index.html">
+                    <i class="bi bi-cast"></i>
+                    <span>Proyectar</span>
+                </a>
+            </div>
+            <div class="botones btn_video" id="btn_video">
+                <a href="../PantallaVideoconferencia/index.html">
+                    <i class="bi bi-person-video3"></i>
+                    <span>Videoconferencia</span>
+                </a>
+            </div>
         </div>
+
+        <div class="col-md-4"></div>
+
+
+    </div>
+</div>
+
+<!-- PopUp  para apagar pantalla -->
+<div class="overlay"></div>
+<div class="popupControl" id="PopUpApagar">
+
+    <div class="row contenidoGeneral">
+        <div class="icon-container">
+            <i class="icon bi bi-power"></i>
+        </div>
+        <h3 class="enunH3">Vas a apagar el proyector</h3>
+        <p class="enunParrafo">¿Deseas continuar?</p>
     </div>
 
-    <!-- PopUp  para apagar pantalla -->
-    <div class="overlay"></div>
-    <div class="popupControl" id="PopUpApagar">
-
-        <div class="row contenidoGeneral">
-            <div class="icon-container">
-                <i class="icon bi bi-power"></i>
-            </div>
-            <h3 class="enunH3">Vas a apagar el proyector</h3>
-            <p class="enunParrafo">¿Deseas continuar?</p>
+    <div class="row botonesGestion justify-content-end">
+        <div class="col-md-6 btnNo">
+            No
         </div>
-
-        <div class="row botonesGestion justify-content-end">
-            <div class="col-md-6 btnNo">
-                No
-            </div>
-            <div class="col-md-6 btnSi">
-                Si
-            </div>
+        <div class="col-md-6 btnSi">
+            Si
         </div>
     </div>
-    <!-- -->
+</div>
+<!-- -->
+
+
+<footer class="row">
+    <div class="col-md-12">
+        <button class="btn button-with-icon btn_footer" id="btn_footerAyuda">
+            <i class="bi bi-question-circle"></i>
+            <span>Ayuda</span>
+        </button>
+    </div>
+</footer>
 
 
 
-    <footer class="row">
-        <div class="col-md-12">
-            <button class="btn button-with-icon btn_footer" id="btn_footerAyuda">
-                <i class="bi bi-question-circle"></i>
-                <span>Ayuda</span>
-            </button>
-        </div>
-    </footer>
-
-
-<script src="js/cambiosPantalla.js"></script>
 <script src="js/gestionPopUps.js"></script>
 </body>
 </html>

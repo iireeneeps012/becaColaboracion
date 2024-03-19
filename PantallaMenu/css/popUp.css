@@ -9,7 +9,7 @@
     display: none; /* Por defecto oculto */
 }
 
-.popupControl{
+.popupControl {
     background-color: #ffffff;
     width: 40%; /* Tamaño más pequeño */
     height: 40%; /* Tamaño más pequeño */
@@ -60,7 +60,6 @@
     justify-content: flex-end; /* Alinea los elementos al final del eje horizontal */
     align-items: flex-end;
 }
-
 
 
 /* Estilos para los botones con la clase .btn y .button-with-icon */

@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="css/style.css" rel="stylesheet">
     <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet" type="text/css">
     <link href="css/barra.css" rel="stylesheet">
     <link href="css/popUp.css" rel="stylesheet">
     <title>Pantalla de Videoconferencia</title>
@@ -19,24 +19,24 @@
     <div class="row division_nav">
 
         <div class="col-md-1 division_nav_back" id="btn_back">
-            <a style="text-decoration: none;" href="../PantallaMenu/index.html">
-                <i  style="color:#e8e5e5;" class="bi bi-arrow-left"></i>
+            <a href="../PantallaMenu/index.html" style="text-decoration: none;">
+                <i class="bi bi-arrow-left" style="color:#e8e5e5;"></i>
             </a>
         </div>
 
         <div class="col-md-9 division_nav_audio">
-            <i  style="color:#e8e5e5;"  class="bi bi-person-square"></i>
+            <i class="bi bi-person-square" style="color:#e8e5e5;"></i>
             <span class="enunciado-div1">Docencia Híbrida</span>
         </div>
 
         <div class="col-md-2">
             <div class="row division_nav_bloque">
                 <div class="col-md-6 division_bloque_ayuda" id="btn_help">
-                        <i class="bi bi-journal-bookmark-fill"></i>
+                    <i class="bi bi-journal-bookmark-fill"></i>
                 </div>
                 <div class="col-md-6 division_bloque_power" id="btn_power">
 
-                        <i style="color:#e8e5e5;"  class="bi bi-power"></i>
+                    <i class="bi bi-power" style="color:#e8e5e5;"></i>
 
                 </div>
             </div>
@@ -56,21 +56,21 @@
 
                 <div class="col-md-8 ">
                     <div class="row division_general_mod_uso">
-                        <div  class="col-md-4 col_btn_audio" id="btn_audio">
-                            <a style="text-decoration: none; color: #111111;" href="../PantallaSoloAudio/index.html">
+                        <div class="col-md-4 col_btn_audio" id="btn_audio">
+                            <a href="../PantallaSoloAudio/index.html" style="text-decoration: none; color: #111111;">
                                 <i class="bi bi-volume-up"></i>
                                 <span>Solo audio</span>
                             </a>
                         </div>
                         <div class="col-md-4 col_btn_proyector" id="btn_proyector">
-                            <a style="text-decoration: none; color: #111111;" href="../PantallaProyectar/index.html">
-                                <i  class="bi bi-display"></i>
+                            <a href="../PantallaProyectar/index.html" style="text-decoration: none; color: #111111;">
+                                <i class="bi bi-display"></i>
                                 <span>Proyector</span>
                             </a>
 
                         </div>
-                        <div  class="col-md-4 col_btn_video" id="btn_video">
-                            <i style="color: white;"class="bi bi-camera-video"></i>
+                        <div class="col-md-4 col_btn_video" id="btn_video">
+                            <i class="bi bi-camera-video" style="color: white;"></i>
                             <span>Videoconferencia</span>
                         </div>
                     </div>
@@ -79,8 +79,8 @@
 
             <div class="row division_mod_general">
                 <div class="col-md-3 division_boton_grabar" id="btn_grabar">
-                        <i class="bi bi-record-circle"></i>
-                        <span>Grabar</span>
+                    <i class="bi bi-record-circle"></i>
+                    <span>Grabar</span>
                 </div>
                 <div class="col-md-3 division_boton_bloque">
                     <div class="row division_boton_proyector" id="btn_encd_proyector">
@@ -113,18 +113,18 @@
             <div class="row division_mod_bot_conf">
                 <div class="col-md-3"></div>
                 <div class="col-md-3 division_boton_conf_audio" id="confAudio-button">
-                    <a href="../PantallaControlAudio/index.html" class="btn button-with-icon btn-block" >
+                    <a class="btn button-with-icon btn-block" href="../PantallaControlAudio/index.html">
                         <i class="bi bi-sliders2"></i>
                         <span>Configuración Audio</span>
                     </a>
                 </div>
                 <div class="col-md-3 division_boton_conf_teams" id="btn_teams">
-                        <i id="btnTeams" class="bi bi-microsoft-teams"></i>
-                        <span>Configuración Teams</span>
+                    <i class="bi bi-microsoft-teams" id="btnTeams"></i>
+                    <span>Configuración Teams</span>
                 </div>
                 <div class="col-md-3 division_boton_conf_manual" id="btn_controlManual">
-                        <i class="bi bi-camera-video-fill"></i>
-                        <span>Control manual</span>
+                    <i class="bi bi-camera-video-fill"></i>
+                    <span>Control manual</span>
                 </div>
 
             </div>
@@ -145,9 +145,12 @@
 
                             <!-- Botones de volumen -->
                             <div class="volume-buttons">
-                                <button id="volumeUpButton" class="volume-button" onclick="adjustVolume(10)"><i class="bi bi-volume-up"></i></button>
-                                <button id="volumeDownButton" class="volume-button" onclick="adjustVolume(-10)"><i class="bi bi-volume-down"></i></button>
-                                <button id="muteButton" class="volume-button volume-button_mute" onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
+                                <button class="volume-button" id="volumeUpButton" onclick="adjustVolume(10)"><i
+                                        class="bi bi-volume-up"></i></button>
+                                <button class="volume-button" id="volumeDownButton" onclick="adjustVolume(-10)"><i
+                                        class="bi bi-volume-down"></i></button>
+                                <button class="volume-button volume-button_mute" id="muteButton"
+                                        onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
                             </div>
                         </aside>
                     </div>
@@ -156,11 +159,10 @@
         </div>
 
 
-        </div>
     </div>
-
-
 </div>
+
+
 
 
 <!-- PopUps-->
@@ -234,10 +236,10 @@
     </div>
 
     <div class="row botonesGestion justify-content-end">
-        <div id="btnSalir" class="col-md-6 btnNo">
+        <div class="col-md-6 btnNo" id="btnSalir">
             No
         </div>
-        <div id="btnEncender" class="col-md-6 btnSi">
+        <div class="col-md-6 btnSi" id="btnEncender">
             Si
         </div>
     </div>
@@ -245,7 +247,7 @@
 <!-- -->
 <!-- PopUp  para fuente -->
 <div class="popupControl" id="PopUpFuente">
-    <button id="btnBack" class="close-button" ><i class="bi bi-x-lg"></i></button>
+    <button class="close-button" id="btnBack"><i class="bi bi-x-lg"></i></button>
     <div class="audio-container">
         <div class="row headerFuentes">
             <i class="bi bi-box-arrow-in-right">Selección de Fuente</i>
@@ -271,14 +273,13 @@
 </div>
 <!-- PopUp para Teams-->
 <div class="popupControl" id="PopUpTeams">
-    <button id="btnVueltaAtras" class="close-button" ><i class="bi bi-x-lg"></i></button>
+    <button class="close-button" id="btnVueltaAtras"><i class="bi bi-x-lg"></i></button>
     <div class="container">
         <div class="header">
             <h2>Configuración Teams</h2>
 
             <h5>Configura tu Teams para utilizarlo en el aula:</h5>
         </div>
-
 
 
         <div class="dropdown-container">
@@ -299,7 +300,6 @@
 
     </div>
 </div>
-
 
 
 <script src="js/gestionPopUps.js"></script>

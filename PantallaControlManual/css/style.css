@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-*{
+* {
     font-family: 'Inter', sans-serif;
     text-decoration: none;
 }
 
-i{
+i {
     font-size: 2em;
 }
 
@@ -41,7 +41,8 @@ i{
     align-items: center;
     font-size: large;
 }
-.bi-person-square{
+
+.bi-person-square {
     margin-right: 1%;
 }
 
@@ -56,9 +57,7 @@ i{
     height: 100%;
     display: flex;
     justify-content: center;
-    display: flex;
     color: black;
-    justify-content: center;
     align-items: center;
 }
 
@@ -67,12 +66,9 @@ i{
     background-color: #242828;
     display: flex;
     justify-content: center;
-    display: flex;
     color: white;
-    justify-content: center;
     align-items: center;
 }
-
 
 
 /**/
@@ -102,7 +98,7 @@ i{
     margin-right: 5%;
 }
 
-.bi-person-bounding-box{
+.bi-person-bounding-box {
     margin-right: 5%;
 }
 
@@ -166,7 +162,6 @@ i{
 }
 
 
-
 /******************************************/
 
 .division_mod_general {
@@ -182,14 +177,14 @@ i{
 
 /*estilos camara*/
 
-.division_control_camara{
+.division_control_camara {
     height: 100%;
     width: auto;
 }
 
 /*arriba*/
 
-.div_botones_flecha_arriba{
+.div_botones_flecha_arriba {
     height: 30%;
     position: relative;
 }
@@ -206,16 +201,17 @@ i{
     bottom: 0;
 
 }
+
 /*fin arriba*/
 
 /*botones medio*/
 
-.div_botones_medio{
+.div_botones_medio {
     height: 30%;
     position: relative;
 }
 
-.div_btn_fcha_izq .bi.bi-arrow-left{
+.div_btn_fcha_izq .bi.bi-arrow-left {
     font-size: 3em;
     background-color: #e8e5e5;
     display: flex;
@@ -229,7 +225,7 @@ i{
 
 }
 
-.div_btn_camara .bi.bi-camera-video-fill{
+.div_btn_camara .bi.bi-camera-video-fill {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -240,7 +236,7 @@ i{
 
 }
 
-.div_btn_fcha_drch .bi.bi-arrow-right{
+.div_btn_fcha_drch .bi.bi-arrow-right {
     font-size: 3em;
     background-color: #e8e5e5;
     display: flex;
@@ -253,12 +249,12 @@ i{
 }
 
 /*abajo*/
-.div_botones_flecha_abajo{
+.div_botones_flecha_abajo {
     height: 30%;
     position: relative;
 }
 
-.div_btn_flcha .bi.bi-arrow-down{
+.div_btn_flcha .bi.bi-arrow-down {
     font-size: 3em;
     background-color: #e8e5e5;
     display: flex;
@@ -273,36 +269,39 @@ i{
 
 /*botones de zoom*/
 
-.div_botones_zoom{
+.div_botones_zoom {
     height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.div_btn_zoom_mas{
+
+.div_btn_zoom_mas {
     border-right: 0.5px solid #989898;
     background-color: #e8e5e5;
 }
 
-.div_btn_zoom_menos{
+.div_btn_zoom_menos {
 
     background-color: #e8e5e5;
 }
 
 /**/
-.division_control_planos{
+.division_control_planos {
     height: 100%;
     width: auto;
 
 
 }
-.division_control_planos h3{
+
+.division_control_planos h3 {
     margin-bottom: 2%;
     margin-top: 4%;
     text-align: left;
     margin-left: 15%;
 }
-.div_btn_fila1{
+
+.div_btn_fila1 {
     height: 30%;
     display: flex;
     justify-content: center;
@@ -311,21 +310,23 @@ i{
 }
 
 
-.div_btn_fila2{
+.div_btn_fila2 {
     height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.div_btn_fila3{
+
+.div_btn_fila3 {
     height: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.div_btn_plano_1{
+
+.div_btn_plano_1 {
     height: 100%;
     width: 70%;
     background-color: #e8e5e5;
@@ -336,12 +337,14 @@ i{
     border: 0.5px solid #989898;
 
 }
+
 .div_btn_plano_1 i,
 .div_btn_plano_1 .icon_text {
     display: block;
     text-align: center;
 }
-.div_btn_plano_2{
+
+.div_btn_plano_2 {
     height: 100%;
     width: 70%;
     display: flex;
@@ -349,16 +352,17 @@ i{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border:  0.5px solid #989898;
+    border: 0.5px solid #989898;
 
 }
+
 .div_btn_plano_2 i,
 .div_btn_plano_2 .icon_text {
     display: block;
     text-align: center;
 }
 
-.col_drch{
+.col_drch {
     display: flex;
     flex-direction: column;
     justify-content: center;

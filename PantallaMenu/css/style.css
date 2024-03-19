@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-a{
+a {
     text-decoration: none;
     color: #000000;
 }
-a:visited{
+
+a:visited {
     text-decoration: none;
     color: #000000;
 }
@@ -32,6 +33,7 @@ i {
     margin-bottom: 10%;
     height: 30%; /* Ajusta la altura según tus necesidades */
 }
+
 .sub1division1 {
     background-color: #CB0017;
     display: flex;
@@ -40,6 +42,7 @@ i {
     color: #FFFFFF;
     height: auto;
 }
+
 .sub1division2 {
 
     height: auto;
@@ -57,7 +60,6 @@ i {
 }
 
 
-
 .sub-section1 {
     display: flex;
     justify-content: center;
@@ -73,7 +75,7 @@ i {
 }
 
 /* Estilos para los botones */
-.botones{
+.botones {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,7 +83,6 @@ i {
     flex-direction: column; /* Invierte la dirección de los elementos en la fila */
     width: 100%; /* Ancho del botón, ajusta según necesites */
     height: 120%; /* Alto del botón, ajusta según necesites */
-    padding: 1%; /* Espaciado interno del botón, ajusta según necesites */
     background-color: rgba(243, 243, 243, 0.56); /* Color de fondo del botón */
     border: 1px solid rgb(214, 214, 214); /* Borde del botón */
     border-radius: 0; /* Radio del borde del botón, ajusta según necesites */
@@ -90,7 +91,6 @@ i {
     padding: 1.5%;
 
 }
-
 
 
 .btn_footer {

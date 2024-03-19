@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <link href="css/style.css" rel="stylesheet">
-    <link href="node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" type="text/css">
     <link href="css/barra.css" rel="stylesheet">
     <title>Pantalla de Videoconferencia</title>
 </head>
@@ -18,8 +18,8 @@
     <div class="row division_nav">
 
         <div class="col-md-1 division_nav_back" id="btn_back">
-                <i class="bi bi-arrow-left">
-                </i>
+            <i class="bi bi-arrow-left">
+            </i>
         </div>
 
         <div class="col-md-9 division_nav_audio">
@@ -30,11 +30,11 @@
         <div class="col-md-2">
             <div class="row division_nav_bloque">
                 <div class="col-md-6 division_bloque_ayuda" id="btn_help">
-                        <i class="bi bi-journal-bookmark-fill"></i>
+                    <i class="bi bi-journal-bookmark-fill"></i>
                 </div>
                 <div class="col-md-6 division_bloque_power" id="btn_power">
 
-                        <i class="bi bi-power"></i>
+                    <i class="bi bi-power"></i>
 
 
                 </div>
@@ -52,11 +52,11 @@
                 <div class="col-md-6 divsion_check_camara">
                     <i class="bi bi-camera-video-fill"></i>
                     <div class="btn_check">
-                        <input type="checkbox" class="checkbox" id="chk_camara"/>
+                        <input class="checkbox" id="chk_camara" type="checkbox"/>
                         <label class="label" for="chk_camara">
                             <span class="off">OFF</span>
                             <span class="on">ON</span>
-                            <div class="ball"></div>
+                            <span class="ball"></span>
                         </label>
                     </div>
                 </div>
@@ -64,11 +64,11 @@
                 <div class="col-md-6 divsion_check_camara">
                     <i class="bi bi-person-bounding-box"></i>
                     <div class="btn_check">
-                        <input type="checkbox" class="checkbox" id="chk_seguimiento"/>
+                        <input class="checkbox" id="chk_seguimiento" type="checkbox"/>
                         <label class="label" for="chk_seguimiento">
                             <span class="off">OFF</span>
                             <span class="on">ON</span>
-                            <div class="ball"></div>
+                            <span class="ball"></span>
                         </label>
                     </div>
                 </div>
@@ -86,7 +86,7 @@
                             <i class="bi bi-arrow-up"></i>
                         </div>
 
-                        <div class="col-md-4"> </div>
+                        <div class="col-md-4"></div>
                     </div>
 
                     <!-- Fila 2 -->
@@ -107,7 +107,7 @@
                     <!-- Fila 3 -->
                     <div class="row div_botones_flecha_abajo">
                         <!-- Columna 1 -->
-                        <div class="col-md-4"> </div>
+                        <div class="col-md-4"></div>
 
                         <div class="col-md-4 div_btn_flcha">
                             <i class="bi bi-arrow-down"></i>
@@ -177,9 +177,12 @@
 
                             <!-- Botones de volumen -->
                             <div class="volume-buttons">
-                                <button id="volumeUpButton" class="volume-button" onclick="adjustVolume(10)"><i class="bi bi-volume-up"></i></button>
-                                <button id="volumeDownButton" class="volume-button" onclick="adjustVolume(-10)"><i class="bi bi-volume-down"></i></button>
-                                <button id="muteButton" class="volume-button volume-button_mute" onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
+                                <button class="volume-button" id="volumeUpButton" onclick="adjustVolume(10)"><i
+                                        class="bi bi-volume-up"></i></button>
+                                <button class="volume-button" id="volumeDownButton" onclick="adjustVolume(-10)"><i
+                                        class="bi bi-volume-down"></i></button>
+                                <button class="volume-button volume-button_mute" id="muteButton"
+                                        onclick="adjustVolume(-100)"><i class="bi bi-volume-mute"></i></button>
                             </div>
                         </aside>
                     </div>
@@ -194,7 +197,7 @@
 <script src="js/script.js"></script>
 <script src="js/cambioColor.js"></script>
 <script src="js/barra.js"></script>
-<script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+
 
 
 </body>

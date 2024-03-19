@@ -1,11 +1,11 @@
 //PopUp de la carga de pantalla de transición
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     var overlay = document.querySelector(".overlay");
     var popup = document.querySelector(".popupCarga");
 
     popup.style.display = "block"; // Mostrar el popup automáticamente cuando se carga la página
 
-    setTimeout(function() {
+    setTimeout(function () {
         popup.style.display = "none"; // Ocultar el popup después de 10 segundos
         overlay.style.display = "none"; // Ocultar el overlay
     }, 10000);
@@ -16,7 +16,7 @@ window.addEventListener("load", function() {
 
 
 // Para ir a la pantalla de apagado sistema
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     var overlay = document.querySelector(".overlay");
     var popup = document.getElementById("PopUpApagar");
     var btnApagar = document.getElementById("btn_power");
@@ -36,18 +36,18 @@ window.addEventListener("load", function() {
     }
 
     // Mostrar el popup cuando se hace clic en el botón de encendido
-    btnApagar.addEventListener("click", function() {
+    btnApagar.addEventListener("click", function () {
         mostrarPopup();
     });
 
     // Evento clic para el botón "Si"
-    btnSi.addEventListener("click", function() {
+    btnSi.addEventListener("click", function () {
         // Redireccionar a otra página cuando se hace clic en "Si"
         window.location.href = '../PantallaInicio/index.html';
     });
 
     // Evento clic para el botón "No"
-    btnNo.addEventListener("click", function() {
+    btnNo.addEventListener("click", function () {
         // Ocultar el popup cuando se hace clic en "No"
         ocultarPopup();
     });
@@ -55,7 +55,7 @@ window.addEventListener("load", function() {
 });
 
 // Para ir a la pantalla de enceder proyeccto
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     var overlay = document.querySelector(".overlay");
     var popup = document.getElementById("PopUpEncender");
     var btnProyector = document.getElementById("btn_encd_proyector");
@@ -65,21 +65,23 @@ window.addEventListener("load", function() {
         popup.style.display = "block";
         overlay.style.display = "block";
     }
+
     function ocultarPopup() {
         popup.style.display = "none";
         overlay.style.display = "none";
     }
-    btnProyector.addEventListener("click", function() {
+
+    btnProyector.addEventListener("click", function () {
         mostrarPopup();
     });
-    btnAtras.addEventListener("click", function() {
+    btnAtras.addEventListener("click", function () {
         ocultarPopup();
     });
 
 });
 
 // Para la pantalla de fuente
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     var overlay = document.querySelector(".overlay");
     var popup = document.getElementById("PopUpFuente");
     var btnFuente = document.getElementById("btn_fuente");
@@ -90,26 +92,28 @@ window.addEventListener("load", function() {
         popup.style.display = "block";
         overlay.style.display = "block";
     }
+
     function ocultarPopup() {
         popup.style.display = "none";
         overlay.style.display = "none";
     }
-    btnFuente.addEventListener("click", function() {
+
+    btnFuente.addEventListener("click", function () {
         mostrarPopup();
     });
 
-    btnEncender.addEventListener("click", function() {
+    btnEncender.addEventListener("click", function () {
         // Redireccionar a otra página cuando se hace clic en "Si"
         window.location.href = '../PantallaInicio/index.html';
     });
-    btnSalir.addEventListener("click", function() {
+    btnSalir.addEventListener("click", function () {
         ocultarPopup();
     });
 
 });
 
 // Para la pantalla de grabar
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     var overlay = document.querySelector(".overlay");
     var popup = document.getElementById("PopUpGrabar");
     var btnGrabar = document.getElementById("btn_grabar");
@@ -129,18 +133,18 @@ window.addEventListener("load", function() {
     }
 
     // Mostrar el popup cuando se hace clic en el botón de encendido
-    btnGrabar.addEventListener("click", function() {
+    btnGrabar.addEventListener("click", function () {
         mostrarPopup();
     });
 
     // Evento clic para el botón "Si"
-    btnIniciar.addEventListener("click", function() {
+    btnIniciar.addEventListener("click", function () {
         // Redireccionar a otra página cuando se hace clic en "Si"
         ocultarPopup();
     });
 
     // Evento clic para el botón "No"
-    btnCancelar.addEventListener("click", function() {
+    btnCancelar.addEventListener("click", function () {
         // Ocultar el popup cuando se hace clic en "No"
         ocultarPopup();
     });
@@ -149,7 +153,7 @@ window.addEventListener("load", function() {
 
 // Para la pantalla de Teams
 
-window.addEventListener("load", function() {
+window.addEventListener("load", function () {
     var overlay = document.querySelector(".overlay");
     var popup = document.getElementById("PopUpTeams");
     var btnTeams = document.getElementById("btnTeams");
@@ -168,13 +172,13 @@ window.addEventListener("load", function() {
     }
 
     // Mostrar el popup cuando se hace clic en el botón de encendido
-    btnTeams.addEventListener("click", function() {
+    btnTeams.addEventListener("click", function () {
         mostrarPopup();
     });
 
 
     // Evento clic para el botón "No"
-    btnAtras.addEventListener("click", function() {
+    btnAtras.addEventListener("click", function () {
         // Ocultar el popup cuando se hace clic en "No"
         ocultarPopup();
     });

@@ -47,20 +47,20 @@ function adjustVolume(volumeChange) {
 
 var divPlanCamaras = document.querySelectorAll('.volume-buttons');
 
-divPlanCamaras.forEach(function(divElement) {
-    divElement.addEventListener('click', function() {
+divPlanCamaras.forEach(function (divElement) {
+    divElement.addEventListener('click', function () {
         cambiarEstilos(divElement, 'red', 'white');
     });
 
-    divElement.addEventListener('click', function() {
+    divElement.addEventListener('click', function () {
         cambiarEstilos(divElement, '', '');
     });
 
-    divElement.addEventListener('click', function() {
+    divElement.addEventListener('click', function () {
         cambiarEstilos(divElement, 'orange', 'white');
     });
 
-    divElement.addEventListener('click', function() {
+    divElement.addEventListener('click', function () {
         cambiarEstilos(divElement, '', '');
     });
 });
@@ -68,7 +68,7 @@ divPlanCamaras.forEach(function(divElement) {
 var muteButton = document.getElementById('muteButton');
 var isMuted = false;
 
-muteButton.addEventListener('click', function() {
+muteButton.addEventListener('click', function () {
     isMuted = !isMuted; // Toggle the state
     if (isMuted) {
         changeButtonColor(muteButton, 'orange', 'white');

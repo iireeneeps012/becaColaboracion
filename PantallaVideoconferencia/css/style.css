@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-*{
+* {
     font-family: 'Inter', sans-serif;
 }
 
@@ -53,9 +53,7 @@ i {
     height: 100%;
     display: flex;
     justify-content: center;
-    display: flex;
     color: black;
-    justify-content: center;
     align-items: center;
 }
 
@@ -64,12 +62,9 @@ i {
     background-color: #242828;
     display: flex;
     justify-content: center;
-    display: flex;
     color: white;
-    justify-content: center;
     align-items: center;
 }
-
 
 
 /**/
@@ -102,13 +97,13 @@ i {
     width: auto;
 }
 
-.divsion_cabecera_mod_uso{
+.divsion_cabecera_mod_uso {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.col_btn_audio{
+.col_btn_audio {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -164,7 +159,6 @@ i {
 }
 
 
-
 .division_boton_bloque i span {
     text-align: right;
 }
@@ -179,6 +173,7 @@ i {
     align-items: center;
     text-align: center;
 }
+
 .division_boton_proyector:hover {
     background-color: orange;
     color: white;
@@ -201,6 +196,7 @@ i {
     background-color: orange;
     color: white;
 }
+
 .division_boton_congelar.pulsado span {
     content: "Congelado";
 }
@@ -220,7 +216,7 @@ i {
 /**/
 
 /*fuente*/
-.division_boton_bloq_fnt{
+.division_boton_bloq_fnt {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -237,6 +233,7 @@ i {
     align-items: center;
     text-align: center;
 }
+
 .division_fuente_seleccionada {
     height: 10%;
     margin-top: 10%;
@@ -245,6 +242,7 @@ i {
     align-items: center;
     text-align: center;
 }
+
 /**/
 
 
@@ -279,7 +277,8 @@ i {
     text-align: center;
 
 }
-.col_drch{
+
+.col_drch {
     display: flex;
     align-items: center;
 }
